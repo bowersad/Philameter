@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href="~/Assets/css/Site.css" rel="stylesheet" />
+    <link href="~/Assets/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/Assets/js/modernizr-2.6.2.js"></script>
+    <link href="~/Assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Assets/css/endless.min.css" rel="stylesheet" />
+    <link href="~/Assets/css/endless-skin.css" rel="stylesheet" />
+</head>
+<body class="overflow-hidden">
+    <div id="overlay" class="transparent"></div>
+
+    <div id="wrapper" class="preload">
+        <div id="top-nav" class="fixed skin-6">
+            <a href="#" class="brand">
+                <span>Philameter</span>
+            </a><!-- /brand -->
+            <button type="button" class="navbar-toggle pull-left" id="sidebarToggle">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <button type="button" class="navbar-toggle pull-left hide-menu" id="menuToggle">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div><!-- /top-nav-->
+
+        <aside class="fixed skin-6">
+            <div class="sidebar-inner scrollable-sidebar">
+                <div class="size-toggle">
+                    <a class="btn btn-sm" id="sizeToggle">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                </div><!-- /size-toggle -->
+
+                <div class="search-block">
+                    <div class="input-group">
+                        <input type="text" class="form-control input-sm" placeholder="search here...">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default btn-sm" type="button"><i class="fa fa-search"></i></button>
+                        </span>
+                    </div><!-- /input-group -->
+                </div><!-- /search-block -->
+                <div class="main-menu">
+                    <ul>
+                        <li class="active">
+                            <a href="index.html">
+                                <span class="menu-icon">
+                                    <i class="fa fa-desktop fa-lg"></i>
+                                </span>
+                                <span class="text">
+                                    Dashboard
+                                </span>
+                                <span class="menu-hover"></span>
+                            </a>
+                        </li>
+                        <li class="openable open">
+                            <a href="#">
+                                <span class="menu-icon">
+                                    <i class="fa fa-tags fa-lg"></i>
+                                </span>
+                                <span class="text">
+                                    Tags
+                                </span>
+                                <span class="menu-hover"></span>
+                            </a>
+                            <ul class="submenu">
+                                <li><a href="index.html"><span class="submenu-label">/tags/transportation</span></a></li>
+                                <li><a href="index.html"><span class="submenu-label">/tags/food</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="about.html">
+                                <span class="menu-icon">
+                                    <i class="fa fa-heartbeat fa-lg"></i>
+                                </span>
+                                <span class="text">
+                                    About
+                                </span>
+                                <span class="menu-hover"></span>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div><!-- /main-menu -->
+            </div><!-- /sidebar-inner -->
+        </aside>
+
+        @RenderBody();
+
+        <!-- Footer
+        ================================================== -->
+        <footer>
+            <div class="row">
+                <div class="col-sm-6">
+                    <span class="footer-brand">
+                        <strong class="text-danger">Philameter</strong>
+                    </span>
+                    <p class="no-margin">
+                        <i class="fa fa-child"></i> 2015 <strong>Philameter</strong>. Alrights Preserved.
+                    </p>
+                </div><!-- /.col -->
+            </div><!-- /.row-->
+        </footer>
+
+
+        <!--Modal-->
+        <div class="modal fade" id="newFolder">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4>Create new folder</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="folderName">Folder Name</label>
+                                <input type="text" class="form-control input-sm" id="folderName" placeholder="Folder name here...">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-sm btn-success" data-dismiss="modal" aria-hidden="true">Close</button>
+                        <a href="#" class="btn btn-danger btn-sm">Save changes</a>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+    </div><!-- /wrapper -->
+
+    <script src="~/Assets/js/jquery-1.10.2.min.js"></script>
+    <script src="~/Assets/js/bootstrap.min.js"></script>
+    <script src="~/Assets/js/statgroups/birth.js"></script>
+    <script src="~/Assets/js/statgroups/pretzel.js"></script>
+    <script src="~/Assets/js/statgroups/ridership.js"></script>
+</body>
+</html>
