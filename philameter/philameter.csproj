@@ -111,6 +111,17 @@
     <Content Include="Assets\css\fullcalendar.print.css" />
     <Content Include="Assets\css\jcarousel.responsive.css" />
     <Content Include="Assets\css\Site.css" />
+    <Content Include="Assets\js\endless\endless.js" />
+    <Content Include="Assets\js\endless\endless_dashboard.js" />
+    <Content Include="Assets\js\endless\endless_form.js" />
+    <Content Include="Assets\js\endless\endless_wizard.js" />
+    <Content Include="Assets\js\endless\pace.js" />
+    <Content Include="Assets\js\endless\philadmin.js" />
+    <Content Include="Assets\js\jquery.colorbox.min.js" />
+    <Content Include="Assets\js\jquery.cookie.min.js" />
+    <Content Include="Assets\js\jquery.popupoverlay.min.js" />
+    <Content Include="Assets\js\jquery.slimscroll.min.js" />
+    <Content Include="Assets\js\jquery.sparkline.min.js" />
     <Content Include="Assets\js\statgroups\birth.js" />
     <Content Include="Assets\js\statgroups\pretzel.js" />
     <Content Include="Assets\js\statgroups\ridership.js" />

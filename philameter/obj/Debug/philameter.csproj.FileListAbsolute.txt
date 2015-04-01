@@ -25,3 +25,30 @@ c:\users\andy\documents\visual studio 2013\Projects\philameter\philameter\bin\Sy
 c:\users\andy\documents\visual studio 2013\Projects\philameter\philameter\obj\Debug\philameter.csprojResolveAssemblyReference.cache
 c:\users\andy\documents\visual studio 2013\Projects\philameter\philameter\obj\Debug\philameter.dll
 c:\users\andy\documents\visual studio 2013\Projects\philameter\philameter\obj\Debug\philameter.pdb
+C:\Users\Andy\Documents\GitHub\Philameter\philameter\bin\philameter.dll.config
+C:\Users\Andy\Documents\GitHub\Philameter\philameter\bin\philameter.dll
+C:\Users\Andy\Documents\GitHub\Philameter\philameter\bin\philameter.pdb
+C:\Users\Andy\Documents\GitHub\Philameter\philameter\bin\EntityFramework.dll
+C:\Users\Andy\Documents\GitHub\Philameter\philameter\bin\EntityFramework.SqlServer.dll
+C:\Users\Andy\Documents\GitHub\Philameter\philameter\bin\MvcSiteMapProvider.dll
+C:\Users\Andy\Documents\GitHub\Philameter\philameter\bin\MvcSiteMapProvider.WebActivator.dll
+C:\Users\Andy\Documents\GitHub\Philameter\philameter\bin\System.Web.Helpers.dll
+C:\Users\Andy\Documents\GitHub\Philameter\philameter\bin\System.Web.Mvc.dll
+C:\Users\Andy\Documents\GitHub\Philameter\philameter\bin\System.Web.Razor.dll
+C:\Users\Andy\Documents\GitHub\Philameter\philameter\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Andy\Documents\GitHub\Philameter\philameter\bin\System.Web.Webpages.dll
+C:\Users\Andy\Documents\GitHub\Philameter\philameter\bin\System.Web.Webpages.Razor.dll
+C:\Users\Andy\Documents\GitHub\Philameter\philameter\bin\WebActivatorEx.dll
+C:\Users\Andy\Documents\GitHub\Philameter\philameter\bin\EntityFramework.xml
+C:\Users\Andy\Documents\GitHub\Philameter\philameter\bin\EntityFramework.SqlServer.xml
+C:\Users\Andy\Documents\GitHub\Philameter\philameter\bin\MvcSiteMapProvider.xml
+C:\Users\Andy\Documents\GitHub\Philameter\philameter\bin\MvcSiteMapProvider.WebActivator.xml
+C:\Users\Andy\Documents\GitHub\Philameter\philameter\bin\System.Web.Razor.xml
+C:\Users\Andy\Documents\GitHub\Philameter\philameter\bin\System.Web.Webpages.xml
+C:\Users\Andy\Documents\GitHub\Philameter\philameter\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Andy\Documents\GitHub\Philameter\philameter\bin\System.Web.Webpages.Razor.xml
+C:\Users\Andy\Documents\GitHub\Philameter\philameter\bin\System.Web.Helpers.xml
+C:\Users\Andy\Documents\GitHub\Philameter\philameter\bin\System.Web.Mvc.xml
+C:\Users\Andy\Documents\GitHub\Philameter\philameter\obj\Debug\philameter.csprojResolveAssemblyReference.cache
+C:\Users\Andy\Documents\GitHub\Philameter\philameter\obj\Debug\philameter.dll
+C:\Users\Andy\Documents\GitHub\Philameter\philameter\obj\Debug\philameter.pdb
