@@ -1,0 +1,80 @@
+﻿@using MvcSiteMapProvider
+
+<div id="top-nav" class="fixed skin-6">
+    <a href="#" class="brand">
+        <span>Philameter</span>
+    </a><!-- /brand -->
+    <button type="button" class="navbar-toggle pull-left" id="sidebarToggle">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+    <button type="button" class="navbar-toggle pull-left hide-menu" id="menuToggle">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+</div><!-- /top-nav-->
+
+<aside class="fixed skin-6">
+    <div class="sidebar-inner scrollable-sidebar">
+        <div class="size-toggle">
+            <a class="btn btn-sm" id="sizeToggle">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+        </div><!-- /size-toggle -->
+
+        <div class="search-block">
+            <div class="input-group">
+                <input type="text" class="form-control input-sm" placeholder="search here...">
+                <span class="input-group-btn">
+                    <button class="btn btn-default btn-sm" type="button"><i class="fa fa-search"></i></button>
+                </span>
+            </div><!-- /input-group -->
+        </div><!-- /search-block -->
+        <div class="main-menu">
+            <ul>
+                <li class="active">
+                    <a href="index.html">
+                        <span class="menu-icon">
+                            <i class="fa fa-desktop fa-lg"></i>
+                        </span>
+                        <span class="text">
+                            Dashboard
+                        </span>
+                        <span class="menu-hover"></span>
+                    </a>
+                </li>
+                <li class="openable open">
+                    <a href="#">
+                        <span class="menu-icon">
+                            <i class="fa fa-tags fa-lg"></i>
+                        </span>
+                        <span class="text">
+                            Tags
+                        </span>
+                        <span class="menu-hover"></span>
+                    </a>
+                    <ul class="submenu">
+                        <li><a href="index.html"><span class="submenu-label">/tags/transportation</span></a></li>
+                        <li><a href="index.html"><span class="submenu-label">/tags/food</span></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="about.html">
+                        <span class="menu-icon">
+                            <i class="fa fa-heartbeat fa-lg"></i>
+                        </span>
+                        <span class="text">
+                            About
+                        </span>
+                        <span class="menu-hover"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div><!-- /main-menu -->
+    </div><!-- /sidebar-inner -->
+</aside>
