@@ -49,6 +49,5 @@ C:\Users\Andy\Documents\GitHub\Philameter\philameter\bin\System.Web.Webpages.Dep
 C:\Users\Andy\Documents\GitHub\Philameter\philameter\bin\System.Web.Webpages.Razor.xml
 C:\Users\Andy\Documents\GitHub\Philameter\philameter\bin\System.Web.Helpers.xml
 C:\Users\Andy\Documents\GitHub\Philameter\philameter\bin\System.Web.Mvc.xml
-C:\Users\Andy\Documents\GitHub\Philameter\philameter\obj\Debug\philameter.csprojResolveAssemblyReference.cache
 C:\Users\Andy\Documents\GitHub\Philameter\philameter\obj\Debug\philameter.dll
 C:\Users\Andy\Documents\GitHub\Philameter\philameter\obj\Debug\philameter.pdb

@@ -34,8 +34,23 @@
                 </span>
             </div><!-- /input-group -->
         </div><!-- /search-block -->
-        <div class="main-menu">
+        <div class="main-menu">         
             <ul>
+                @foreach (var node in Model.Nodes)
+                {
+                    <li>
+                        <a href="@node.RouteValues">
+                            <span>
+                                <i class="fa @node.Attributes["Icon"].ToString() fa-lg"></i>
+                            </span>
+                            <span class="text">
+                                @node.Description
+                            </span>
+                            <span class="menu-hover"></span>
+                        </a>
+                    </li>
+                }
+
                 <li class="active">
                     <a href="index.html">
                         <span class="menu-icon">
@@ -47,7 +62,7 @@
                         <span class="menu-hover"></span>
                     </a>
                 </li>
-                <li class="openable open">
+                <li class="openable open active">
                     <a href="#">
                         <span class="menu-icon">
                             <i class="fa fa-tags fa-lg"></i>
