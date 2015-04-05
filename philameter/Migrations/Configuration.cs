@@ -4,6 +4,7 @@ namespace philameter.Migrations
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
+    using DAL.Entities;
 
     internal sealed class Configuration : DbMigrationsConfiguration<philameter.DAL.Entities.PhilaModel>
     {
@@ -26,6 +27,15 @@ namespace philameter.Migrations
             //      new Person { FullName = "Rowan Miller" }
             //    );
             //
+
+            var statBirth = new Stats {Id = 1,Name = "Births", Details = "Number of people born in Philadelphia, PA",Source = "IDK", Stat  = 63.25};
+            var statPretzel = new Stats { Id = 2, Name = "Pretzel", Details = "Number of pretzel's eaten in Philadelphia, PA", Source = "IDK", Stat = 63.25 };
+
+
+            context.Stats.AddOrUpdate(statBirth);
+            context.Stats.AddOrUpdate(statPretzel);
+            context.Stats.AddOrUpdate(statPretzel);
+
         }
     }
 }
