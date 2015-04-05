@@ -38,13 +38,18 @@
             <ul>
                 @foreach (var node in Model.Nodes)
                 {
+                    if (Request.Url.LocalPath == node.Action)
+                    {
+                        <span>hello</span>
+                    }
+                    
                     <li>
                         <a href="@node.RouteValues">
                             <span>
                                 <i class="fa @node.Attributes["Icon"].ToString() fa-lg"></i>
                             </span>
                             <span class="text">
-                                @node.Description
+                                @node.Description (@Request.Url.LocalPath)--(@node.Action)
                             </span>
                             <span class="menu-hover"></span>
                         </a>

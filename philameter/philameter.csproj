@@ -153,16 +153,16 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="DAL\Entities\PhilaModel.cs" />
+    <Compile Include="DAL\PhilaModel.cs" />
     <Compile Include="DAL\Entities\Stats.cs" />
     <Compile Include="DAL\Entities\StatTags.cs" />
     <Compile Include="DAL\Entities\Tags.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201504041944418_initial.cs" />
-    <Compile Include="Migrations\201504041944418_initial.Designer.cs">
-      <DependentUpon>201504041944418_initial.cs</DependentUpon>
+    <Compile Include="Migrations\201504050221417_initial.cs" />
+    <Compile Include="Migrations\201504050221417_initial.Designer.cs">
+      <DependentUpon>201504050221417_initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -192,8 +192,8 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201504041944418_initial.resx">
-      <DependentUpon>201504041944418_initial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201504050221417_initial.resx">
+      <DependentUpon>201504050221417_initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

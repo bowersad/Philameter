@@ -51,3 +51,6 @@ C:\Users\Andy\Documents\GitHub\Philameter\philameter\bin\System.Web.Helpers.xml
 C:\Users\Andy\Documents\GitHub\Philameter\philameter\bin\System.Web.Mvc.xml
 C:\Users\Andy\Documents\GitHub\Philameter\philameter\obj\Debug\philameter.dll
 C:\Users\Andy\Documents\GitHub\Philameter\philameter\obj\Debug\philameter.pdb
+C:\Users\Andy\Documents\GitHub\Philameter\philameter\obj\Debug\philameter.csprojResolveAssemblyReference.cache
+C:\Users\Andy\Documents\GitHub\Philameter\philameter\obj\Debug\philameter.Migrations.initial.resources
+C:\Users\Andy\Documents\GitHub\Philameter\philameter\obj\Debug\philameter.csproj.GenerateResource.Cache
