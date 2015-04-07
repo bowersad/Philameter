@@ -29,12 +29,27 @@ namespace philameter.Migrations
             //
 
             var statBirth = new Stats {Id = 1,Name = "Births", Details = "Number of people born in Philadelphia, PA",Source = "IDK", Stat  = 63.25};
-            var statPretzel = new Stats { Id = 2, Name = "Pretzel", Details = "Number of pretzel's eaten in Philadelphia, PA", Source = "IDK", Stat = 63.25 };
+            var statPretzel = new Stats { Id = 2, Name = "Pretzel", Details = "Number of pretzel's eaten in Philadelphia, PA", Source = "IDK", Stat = 63821 };
+            var statSeptaRidership = new Stats { Id = 3, Name = "Ridership", Details = "Number of people riding SEPTA each day", Source = "IDK", Stat = 333600 };
+
+            var tagPeople = new Tags { Id = 1, Name = "People" };
+            var tagFood = new Tags {Id =  2 , Name = "Food"};
+            var tagTransportation = new Tags { Id = 3, Name = "Transportation" };
+
+            var statTagBirth1 = new StatTags { Id = 1, StatId = 1, TagId = 1 };
+            var statTagBirth2 = new StatTags { Id = 2, StatId = 2, TagId = 2 };
+            var statTagBirth3 = new StatTags { Id = 3, StatId = 3, TagId = 3 };
 
 
             context.Stats.AddOrUpdate(statBirth);
             context.Stats.AddOrUpdate(statPretzel);
-            context.Stats.AddOrUpdate(statPretzel);
+            context.Stats.AddOrUpdate(statSeptaRidership);
+
+            context.Tags.AddOrUpdate(tagPeople);
+            context.Tags.AddOrUpdate(tagFood);
+            context.Tags.AddOrUpdate(tagTransportation);
+
+
 
         }
     }

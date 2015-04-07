@@ -11,7 +11,9 @@ namespace philameter.DAL.Entities
         public string Name { get; set; }
         public string Details { get; set; }
         public string Source { get; set; }
-        public double Stat { get; set; }       
+        public double Stat { get; set; }
+
+        public IEnumerable<Tags> Tags { get; set; }
 
     }
 }
