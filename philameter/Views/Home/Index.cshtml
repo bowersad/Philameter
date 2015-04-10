@@ -1,11 +1,8 @@
-﻿
+﻿@model IEnumerable<philameter.DAL.Entities.Stats>
+
 @{
     ViewBag.Title = "Index";
 }
-
-<h2>
-    Index
-</h2>
 
 <div id="main-container">
     <div id="breadcrumb">
@@ -17,6 +14,21 @@
 
 
     <div class="padding-md">
+        <div class="row">
+            @foreach (var item in Model)
+            {
+                <div class="col-sm-6 col-md-3">
+                    <div class="panel-stat3 bg-success">
+                        <h2 class="m-top-none" id="Daily">0</h2>
+                        <h5 id="birthDailyLabel">Births today</h5>
+                        <i class="fa fa-child fa-lg"></i> @item.Name
+                        <div class="stat-icon">
+                            <i class="fa fa-birthday-cake fa-3x"></i>
+                        </div>
+                    </div>
+                </div><!-- /.col -->
+            }
+        </div>
         <div class="row">
             <div class="col-sm-6 col-md-3">
                 <div class="panel-stat3 bg-success">
@@ -136,3 +148,9 @@
     </div><!-- /.padding-md -->
 </div><!-- /main-container -->
 
+@section Scripts
+{
+<script src="~/Assets/js/statgroups/birth.js"></script>
+<script src="~/Assets/js/statgroups/pretzel.js"></script>
+<script src="~/Assets/js/statgroups/ridership.js"></script>
+}
