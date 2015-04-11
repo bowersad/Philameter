@@ -28,6 +28,13 @@ namespace philameter.Controllers
             return View(StatsModel);
         }
 
+        public ActionResult Dashboard()
+        {
+            var StatsModel = service.Stats.Get();
+
+            return View(StatsModel);
+        }
+
         public ActionResult About()
         {
             return View();

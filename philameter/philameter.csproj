@@ -157,6 +157,12 @@
     <Compile Include="DAL\Entities\Stats.cs" />
     <Compile Include="DAL\Entities\StatTags.cs" />
     <Compile Include="DAL\Entities\Tags.cs" />
+    <Compile Include="DAL\PhilaModelService.cs" />
+    <Compile Include="DAL\Repositories\BaseRepository.cs" />
+    <Compile Include="DAL\Repositories\IRepository.cs" />
+    <Compile Include="DAL\Repositories\StatsRepository.cs" />
+    <Compile Include="DAL\Repositories\StatsTagsRepository.cs" />
+    <Compile Include="DAL\Repositories\TagsRepository.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -167,6 +173,14 @@
     <Compile Include="Migrations\201504050323077_initial-updte.cs" />
     <Compile Include="Migrations\201504050323077_initial-updte.Designer.cs">
       <DependentUpon>201504050323077_initial-updte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201504070105487_update2.cs" />
+    <Compile Include="Migrations\201504070105487_update2.Designer.cs">
+      <DependentUpon>201504070105487_update2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201504110128515_statupdate.cs" />
+    <Compile Include="Migrations\201504110128515_statupdate.Designer.cs">
+      <DependentUpon>201504110128515_statupdate.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -182,6 +196,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Views\Shared\DisplayTemplates\MenuNavBarHelper.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Dashboard.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -192,7 +207,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Assets\images\" />
-    <Folder Include="DAL\Repositories\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
@@ -201,6 +215,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201504050323077_initial-updte.resx">
       <DependentUpon>201504050323077_initial-updte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201504070105487_update2.resx">
+      <DependentUpon>201504070105487_update2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201504110128515_statupdate.resx">
+      <DependentUpon>201504110128515_statupdate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
@@ -219,6 +239,8 @@
           <DevelopmentServerPort>57467</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:57467/</IISUrl>
+          <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
+          <IISAppRootUrl>http://localhost:57467/home/dashboard</IISAppRootUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
