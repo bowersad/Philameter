@@ -153,6 +153,7 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="DAL\Entities\Category.cs" />
     <Compile Include="DAL\PhilaModel.cs" />
     <Compile Include="DAL\Entities\Stats.cs" />
     <Compile Include="DAL\Entities\StatTags.cs" />
@@ -181,6 +182,10 @@
     <Compile Include="Migrations\201504110128515_statupdate.cs" />
     <Compile Include="Migrations\201504110128515_statupdate.Designer.cs">
       <DependentUpon>201504110128515_statupdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201504111334538_category.cs" />
+    <Compile Include="Migrations\201504111334538_category.Designer.cs">
+      <DependentUpon>201504111334538_category.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -221,6 +226,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201504110128515_statupdate.resx">
       <DependentUpon>201504110128515_statupdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201504111334538_category.resx">
+      <DependentUpon>201504111334538_category.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

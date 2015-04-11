@@ -14,9 +14,7 @@ namespace philameter.DAL.Entities
         public double Stat { get; set; }
         public string PanelClass { get; set; }
         public string FontAwesomeIcon { get; set; }
-
-
-        public IEnumerable<Tags> Tags { get; set; }
+        public virtual Category Category { get; set; }
 
     }
 }
