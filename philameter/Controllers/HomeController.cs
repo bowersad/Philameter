@@ -25,7 +25,7 @@ namespace philameter.Controllers
         {
             var StatsModel = service.Stats.Get();
 
-            return View(StatsModel);
+            return View();
         }
 
         public ActionResult Dashboard()
