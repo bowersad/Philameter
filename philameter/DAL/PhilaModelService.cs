@@ -10,8 +10,7 @@ namespace philameter.DAL
     public class PhilaModelService
     {
         private Repositories.BaseRepository<Stats> _stats;
-        private Repositories.BaseRepository<Tags> _tags;
-        private Repositories.BaseRepository<StatTags> _stattags;
+        private Repositories.BaseRepository<Category> _categories;
 
         public Repositories.BaseRepository<Stats> Stats
         {
@@ -26,29 +25,16 @@ namespace philameter.DAL
             }
         }
 
-        public Repositories.BaseRepository<Tags> Tags
+        public Repositories.BaseRepository<Category> Categories
         {
             get
             {
-                if (_tags == null)
+                if (_categories == null)
                 {
-                    _tags = new TagsRepository(new PhilaModel());
+                    _categories = new CategoryRepository(new PhilaModel());
                 }
 
-                return _tags;
-            }
-        }
-
-        public Repositories.BaseRepository<StatTags> StatTags
-        {
-            get
-            {
-                if (_stattags == null)
-                {
-                    _stattags = new StatsTagsRepository(new PhilaModel());
-                }
-
-                return _stattags;
+                return _categories;
             }
         }
 

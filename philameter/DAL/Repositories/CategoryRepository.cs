@@ -7,8 +7,8 @@ using philameter.DAL.Entities;
 
 namespace philameter.DAL.Repositories
 {
-    public class StatsTagsRepository : BaseRepository<StatTags>
+    public class CategoryRepository : BaseRepository<Category>
     {
-        public StatsTagsRepository(PhilaModel context) : base(context) { }
+        public CategoryRepository(PhilaModel _context) : base(_context) { }
     }
 }

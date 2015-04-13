@@ -9,5 +9,6 @@ namespace philameter.DAL.Entities
     {
         public int Id { get; set; }
         public string Name { get; set; }
+        public string FontAwesomeIcon { get; set; }
     }
 }

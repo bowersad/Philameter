@@ -19,8 +19,6 @@ namespace philameter.DAL.Entities
 
         public DbSet<Stats> Stats { get; set; }
         public DbSet<Category> Category { get; set; }
-        public DbSet<Tags> Tags { get; set; }
-        public DbSet<StatTags> StatTags { get; set; }
 
 
         // Add a DbSet for each entity type that you want to include in your model. For more information 
