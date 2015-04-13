@@ -19,9 +19,9 @@
             {
                 <div class="col-sm-6 col-md-3">
                     <div class="panel-stat3 @item.PanelClass">
-                        <h2 class="m-top-none" id="@item.Name">0</h2>
+                        <h2 class="m-top-none" id="@item.Name.Replace(" ","_")">0</h2>
                         <h5 id="birthDailyLabel">@item.Name this year</h5>
-                        <i class="fa fa-child fa-lg"></i> @item.Name
+                        <i class="fa @item.Category.FontAwesomeIcon fa-lg"></i> @item.Name
                         <div class="stat-icon">
                             <i class="fa fa-@item.FontAwesomeIcon fa-3x"></i>
                         </div>
@@ -37,7 +37,7 @@
     {
     <script>
     $(function () {
-        var @item.Name = @item.Stat;
+        var @item.Name.Replace(" ","_") = @item.Stat;
 
         $(window).load(function (e) {
 
@@ -52,7 +52,7 @@
                 duration: 4000,
                 easing: 'linear',
                 step: function () {
-                    $('#@item.Name').text(Math.ceil(this.numberValue));
+                    $('#@item.Name.Replace(" ","_")').text(Math.ceil(this.numberValue));
                 }
             });
 
@@ -63,12 +63,12 @@
                 var d = new Date();
                 var yearStart = new Date(d.getFullYear(), 1, 1);
                 var time = d.getTime();
-                var newNumber = ((d - yearStart) / 86400000) * @item.Name;
+                var newNumber = ((d - yearStart) / 86400000) * @item.Name.Replace(" ", "_");
                 $({ numberValue: currentNumber }).animate({ numberValue: newNumber }, {
                     duration: 2500,
                     easing: 'linear',
                     step: function () {
-                        $('#@item.Name').text(Math.ceil(this.numberValue));
+                        $('#@item.Name.Replace(" ", "_")').text(Math.ceil(this.numberValue));
                     }
                 });
             }, 8500);
