@@ -58,14 +58,14 @@
 
 
             setInterval(function () {
-                var currentNumber = $('#@item.Name').text();
+                var currentNumber = $('#@item.Name.Replace(" ", "_")').text();
 
                 var d = new Date();
                 var yearStart = new Date(d.getFullYear(), 1, 1);
                 var time = d.getTime();
                 var newNumber = ((d - yearStart) / 86400000) * @item.Name.Replace(" ", "_");
                 $({ numberValue: currentNumber }).animate({ numberValue: newNumber }, {
-                    duration: 2500,
+                    duration: 500,
                     easing: 'linear',
                     step: function () {
                         $('#@item.Name.Replace(" ", "_")').text(Math.ceil(this.numberValue));
