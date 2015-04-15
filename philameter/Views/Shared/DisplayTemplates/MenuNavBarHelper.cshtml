@@ -44,12 +44,12 @@
                     }
                     
                     <li>
-                        <a href="@node.RouteValues">
-                            <span>
+                        <a href="@Request.Url.LocalPath">
+                            <span class="menu-icon">
                                 <i class="fa @node.Attributes["Icon"].ToString() fa-lg"></i>
                             </span>
                             <span class="text">
-                                @node.Description (@Request.Url.LocalPath)--(@node.Action)
+                                @node.Description (@node.Action)
                             </span>
                             <span class="menu-hover"></span>
                         </a>
