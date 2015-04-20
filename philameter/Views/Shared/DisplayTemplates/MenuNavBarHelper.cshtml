@@ -38,13 +38,13 @@
             <ul>
                 @foreach (var node in Model.Nodes)
                 {
-                    if (Request.Url.LocalPath == node.Action)
+                    if (node.IsCurrentNode)
                     {
                         <span>hello</span>
                     }
                     
                     <li>
-                        <a href="@Request.Url.LocalPath">
+                        <a href="@string.Format(@"/{0}/{1}",node.Controller, node.Action)">
                             <span class="menu-icon">
                                 <i class="fa @node.Attributes["Icon"].ToString() fa-lg"></i>
                             </span>
