@@ -2,17 +2,27 @@
 @using System.Web.Mvc.Html
 @using MvcSiteMapProvider.Web.Html.Models
 
-@if (Model.IsCurrentNode && Model.SourceMetadata["HtmlHelper"].ToString() != "MvcSiteMapProvider.Web.Html.MenuHelper")  { 
-    <text>@Model.Title</text>
-} else if (Model.IsClickable) { 
-    if (string.IsNullOrEmpty(Model.Description))
-    {
-        <a href="@Model.Url">@Model.Title</a>
-    }
-    else
-    {
-        <a href="@Model.Url" title="@Model.Description">@Model.Title</a>
-    }
-} else { 
+@if (Model.IsCurrentNode && Model.SourceMetadata["HtmlHelper"].ToString() != "MvcSiteMapProvider.Web.Html.MenuHelper")
+{
+    <li class="active">
+        <text>@Model.Description</text>
+    </li>
+}
+else if (Model.IsClickable)
+{
+    <li>
+        <a href="@string.Format(@"/{0}/{1}", Model.Controller, Model.Action)">
+            <span class="menu-icon">
+                <i class="fa @Model.Attributes["Icon"].ToString() fa-lg"></i>
+            </span>
+            <span class="text">
+                @Model.Description (@Model.Action)
+            </span>
+            <span class="menu-hover"></span>
+        </a>
+    </li>
+}
+else
+{
     <text>@Model.Title</text>
 }
