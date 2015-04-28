@@ -145,25 +145,25 @@
     <Content Include="Views\Shared\DisplayTemplates\MetaRobotsHelperModel.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\MenuHelperModel.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\CanonicalHelperModel.cshtml" />
-    <Content Include="Mvc.sitemap" />
+    <Content Include="Mvc.sitemap">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="MvcSiteMapSchema.xsd">
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Code\CategoryDynamicNodeProvider.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="DAL\Entities\Category.cs" />
     <Compile Include="DAL\PhilaModel.cs" />
     <Compile Include="DAL\Entities\Stats.cs" />
-    <Compile Include="DAL\Entities\StatTags.cs" />
-    <Compile Include="DAL\Entities\Tags.cs" />
     <Compile Include="DAL\PhilaModelService.cs" />
     <Compile Include="DAL\Repositories\BaseRepository.cs" />
+    <Compile Include="DAL\Repositories\CategoryRepository.cs" />
     <Compile Include="DAL\Repositories\IRepository.cs" />
     <Compile Include="DAL\Repositories\StatsRepository.cs" />
-    <Compile Include="DAL\Repositories\StatsTagsRepository.cs" />
-    <Compile Include="DAL\Repositories\TagsRepository.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -186,6 +186,14 @@
     <Compile Include="Migrations\201504111334538_category.cs" />
     <Compile Include="Migrations\201504111334538_category.Designer.cs">
       <DependentUpon>201504111334538_category.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201504120325506_category2.cs" />
+    <Compile Include="Migrations\201504120325506_category2.Designer.cs">
+      <DependentUpon>201504120325506_category2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201504131941515_categoryupdate.cs" />
+    <Compile Include="Migrations\201504131941515_categoryupdate.Designer.cs">
+      <DependentUpon>201504131941515_categoryupdate.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -229,6 +237,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201504111334538_category.resx">
       <DependentUpon>201504111334538_category.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201504120325506_category2.resx">
+      <DependentUpon>201504120325506_category2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201504131941515_categoryupdate.resx">
+      <DependentUpon>201504131941515_categoryupdate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

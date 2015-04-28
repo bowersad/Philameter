@@ -49,8 +49,14 @@ C:\Users\Andy\Documents\GitHub\Philameter\philameter\bin\System.Web.Webpages.Dep
 C:\Users\Andy\Documents\GitHub\Philameter\philameter\bin\System.Web.Webpages.Razor.xml
 C:\Users\Andy\Documents\GitHub\Philameter\philameter\bin\System.Web.Helpers.xml
 C:\Users\Andy\Documents\GitHub\Philameter\philameter\bin\System.Web.Mvc.xml
+C:\Users\Andy\Documents\GitHub\Philameter\philameter\obj\Debug\philameter.Migrations.initial.resources
+C:\Users\Andy\Documents\GitHub\Philameter\philameter\obj\Debug\philameter.Migrations.initialupdte.resources
+C:\Users\Andy\Documents\GitHub\Philameter\philameter\obj\Debug\philameter.Migrations.update2.resources
+C:\Users\Andy\Documents\GitHub\Philameter\philameter\obj\Debug\philameter.Migrations.statupdate.resources
+C:\Users\Andy\Documents\GitHub\Philameter\philameter\obj\Debug\philameter.Migrations.category.resources
+C:\Users\Andy\Documents\GitHub\Philameter\philameter\obj\Debug\philameter.Migrations.category2.resources
+C:\Users\Andy\Documents\GitHub\Philameter\philameter\obj\Debug\philameter.Migrations.categoryupdate.resources
+C:\Users\Andy\Documents\GitHub\Philameter\philameter\obj\Debug\philameter.csproj.GenerateResource.Cache
 C:\Users\Andy\Documents\GitHub\Philameter\philameter\obj\Debug\philameter.dll
 C:\Users\Andy\Documents\GitHub\Philameter\philameter\obj\Debug\philameter.pdb
 C:\Users\Andy\Documents\GitHub\Philameter\philameter\obj\Debug\philameter.csprojResolveAssemblyReference.cache
-C:\Users\Andy\Documents\GitHub\Philameter\philameter\obj\Debug\philameter.Migrations.initial.resources
-C:\Users\Andy\Documents\GitHub\Philameter\philameter\obj\Debug\philameter.csproj.GenerateResource.Cache
