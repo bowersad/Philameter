@@ -7,7 +7,7 @@ using philameter.DAL.Repositories;
 
 namespace philameter.DAL
 {
-    public class PhilaModelService
+    public class PhilaModelService : IDisposable
     {
         private Repositories.BaseRepository<Stats> _stats;
         private Repositories.BaseRepository<Category> _categories;
@@ -38,5 +38,10 @@ namespace philameter.DAL
             }
         }
 
+
+        public void Dispose()
+        {
+            return;
+        }
     }
 }
