@@ -17,13 +17,15 @@
         <div class="row">
             @foreach (var item in Model)
             {
-                <div class="col-sm-6 col-md-3">
+                <div class="col-sm-6 col-md-4">
                     <div class="panel-stat3 @item.PanelClass">
-                        <h2 class="m-top-none" id="@item.Name.Replace(" ","_")">0</h2>
-                        <h5 id="birthDailyLabel">@item.Name this year</h5>
-                        <i class="fa @item.Category.FontAwesomeIcon fa-lg"></i> @item.Name
+                        <h1 class="m-top-none" id="@item.Name.Replace(" ","_")">0</h1>
+                        
+                        <h4 id="birthDailyLabel">@item.Name this year</h4>
+                        
+                        <i class="fa @item.Category.FontAwesomeIcon fa-lg"></i> @item.Category.Name
                         <div class="stat-icon">
-                            <i class="fa @item.FontAwesomeIcon fa-3x"></i>
+                            <i class="fa @item.FontAwesomeIcon fa-5x"></i>
                         </div>
                     </div>
                 </div><!-- /.col -->
