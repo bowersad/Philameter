@@ -20,14 +20,6 @@ namespace philameter.Controllers
         }
         
 
-        // GET: Home
-        public ActionResult Index()
-        {
-            var StatsModel = service.Stats.Get();
-
-            return View();
-        }
-
         public ActionResult Dashboard()
         {
             var StatsModel = service.Stats.Get();
