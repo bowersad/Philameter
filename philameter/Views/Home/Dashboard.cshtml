@@ -43,15 +43,24 @@
 
         $(window).load(function (e) {
 
-            //Initial Animations
+            //Animate
             var d = new Date();
             var dayStart = new Date(d.getFullYear(), d.getMonth(), d.getDate());
             var monthStart = new Date(d.getFullYear(), d.getMonth(), 1);
             var yearStart = new Date(d.getFullYear(), 1, 1);
+            var yearEnd = new Date(d.getFullYear()+ 1, 12,31);
+            var dailyMS = (24 * 60 * 60 * 1000)
 
-            var currentSeptaAnnually = ((d - yearStart) / 86400000) * @item.Stat;
-            $({ numberValue: 0 }).animate({ numberValue: currentSeptaAnnually }, {
-                duration: 4000,
+            var interval = 1000 * 60 * 60
+            var currentVal = ((d - yearStart) / dailyMS) * @item.Stat;
+            var intervalVal  =  ((@item.Stat) / dailyMS) * interval
+
+
+
+            $('#@item.Name.Replace(" ","_")').text(currentVal)
+
+            $({ numberValue: currentVal }).animate({ numberValue: (currentVal + intervalVal) }, {
+                duration: interval,
                 easing: 'linear',
                 step: function () {
                     $('#@item.Name.Replace(" ","_")').text(Math.ceil(this.numberValue));
@@ -59,25 +68,9 @@
             });
 
 
-            setInterval(function () {
-                var currentNumber = $('#@item.Name.Replace(" ", "_")').text();
-
-                var d = new Date();
-                var yearStart = new Date(d.getFullYear(), 1, 1);
-                var time = d.getTime();
-                var newNumber = ((d - yearStart) / 86400000) * @item.Name.Replace(" ", "_");
-                $({ numberValue: currentNumber }).animate({ numberValue: newNumber }, {
-                    duration: 500,
-                    easing: 'linear',
-                    step: function () {
-                        $('#@item.Name.Replace(" ", "_")').text(Math.ceil(this.numberValue));
-                    }
-                });
-            }, 8500);
-
         });
     });
-        </script>
+</script>
     }
 
 }
