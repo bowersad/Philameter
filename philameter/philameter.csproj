@@ -91,6 +91,7 @@
     </Reference>
     <Reference Include="Microsoft.Web.Infrastructure">
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System.Web.Mvc">
       <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.2\lib\net45\System.Web.Mvc.dll</HintPath>
@@ -112,6 +113,7 @@
     <Content Include="Assets\css\fullcalendar.css" />
     <Content Include="Assets\css\fullcalendar.print.css" />
     <Content Include="Assets\css\jcarousel.responsive.css" />
+    <Content Include="Assets\css\odometer-theme-default.css" />
     <Content Include="Assets\css\Site.css" />
     <Content Include="Assets\js\endless\endless.js" />
     <Content Include="Assets\js\endless\endless_dashboard.js" />
@@ -124,6 +126,8 @@
     <Content Include="Assets\js\jquery.popupoverlay.min.js" />
     <Content Include="Assets\js\jquery.slimscroll.min.js" />
     <Content Include="Assets\js\jquery.sparkline.min.js" />
+    <Content Include="Assets\js\odometer.js" />
+    <Content Include="Assets\js\odometer.min.js" />
     <Content Include="Assets\js\statgroups\birth.js" />
     <Content Include="Assets\js\statgroups\pretzel.js" />
     <Content Include="Assets\js\statgroups\ridership.js" />
@@ -210,11 +214,14 @@
     <Content Include="Views\Shared\DisplayTemplates\MenuNavBarHelper.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Dashboard.cshtml" />
+    <None Include="Properties\PublishProfiles\sandbox-local.pubxml" />
+    <None Include="Properties\PublishProfiles\staging.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
     </None>
   </ItemGroup>
   <ItemGroup>

@@ -1,0 +1,74 @@
+﻿@model MvcSiteMapProvider.Web.Html.Models.SiteMapNodeModel
+@using System.Web.Mvc.Html
+@using MvcSiteMapProvider.Web.Html.Models
+
+
+@if (Model.IsCurrentNode && Model.IsClickable)
+{
+    <li class="active open openable">
+        <a href="#">
+            <span class="menu-icon">
+                <i class="fa @Model.Attributes["Icon"].ToString() fa-lg"></i>
+            </span>
+            <span class="text">
+                @Model.Description (@Model.Action) (Current+Clickable)
+            </span>
+            <span class="menu-hover"></span>
+            @if (Model.Children.Any())
+            {
+                <ul class="submenu">
+                    @foreach (var node in Model.Children)
+                    {
+                        <li><a href="index.html"><span class="submenu-label">/tags/@node.Description</span></a></li>
+                        <li><a href=""></a></li>
+                    }
+                </ul>
+
+            }
+        </a>
+
+    </li>
+}
+else if (Model.IsCurrentNode && !Model.IsClickable)
+{
+    <li class="active openable open">
+        <a href="#">
+            <span class="menu-icon">
+                <i class="fa @Model.Attributes["Icon"].ToString() fa-lg"></i>
+            </span>
+            <span class="text">
+                @Model.Description (@Model.Action) (Current+NotClickable)
+            </span>
+            <span class="menu-hover"></span>
+        </a>
+    </li>
+}
+else if (!Model.IsCurrentNode && !Model.IsClickable)
+{
+    <li class="openable">
+        <a href="#">
+            <span class="menu-icon">
+                <i class="fa @Model.Attributes["Icon"].ToString() fa-lg"></i>
+            </span>
+            <span class="text">
+                @Model.Description (@Model.Action) (NotCurrent+NotClickable)
+            </span>
+            <span class="menu-hover"></span>
+        </a>
+    </li>
+}
+else if (!Model.IsCurrentNode && Model.IsClickable)
+{
+    <li>
+        <a href="@string.Format(@"/{0}/{1}", Model.Controller, Model.Action)">
+            <span class="menu-icon">
+                <i class="fa @Model.Attributes["Icon"].ToString() fa-lg"></i>
+            </span>
+            <span class="text">
+                @Model.Description (@Model.Action) (NotCurrent+Clickable)
+            </span>
+            <span class="menu-hover"></span>
+        </a>
+    </li>
+}
+

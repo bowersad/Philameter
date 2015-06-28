@@ -1,0 +1,83 @@
+﻿@model IEnumerable<philameter.DAL.Entities.Stats>
+
+@{
+    ViewBag.Title = "Dashboard";
+}
+
+<div id="main-container">
+    <div id="breadcrumb">
+        <ul class="breadcrumb">
+            <li><i class="fa fa-home"></i><a href="index.html"> Home</a></li>
+            <li class="active">Dashboard</li>
+        </ul>
+    </div><!-- /breadcrumb-->
+
+
+    <div class="padding-md">
+        <div class="row">
+            @foreach (var item in Model)
+            {
+                <div class="col-sm-6 col-md-4">
+                    <div class="panel-stat3 @item.PanelClass">
+                        <h1 class="m-top-none" id="@item.Name.Replace(" ","_")">0</h1>
+                        
+                        <h4 id="birthDailyLabel">@item.Name this year</h4>
+                        
+                        <i class="fa @item.Category.FontAwesomeIcon fa-lg"></i> @item.Category.Name
+                        <div class="stat-icon">
+                            <i class="fa @item.FontAwesomeIcon fa-5x"></i>
+                        </div>
+                    </div>
+                </div><!-- /.col -->
+            }
+        </div>
+    </div><!-- /.padding-md -->
+</div><!-- /main-container -->
+@section Scripts
+{
+    @foreach (var item in Model)
+    {
+    <script>
+    $(function () {
+        var @item.Name.Replace(" ","_") = @item.Stat;
+
+        $(window).load(function (e) {
+
+            //Initial Animations
+            var d = new Date();
+            var dayStart = new Date(d.getFullYear(), d.getMonth(), d.getDate());
+            var monthStart = new Date(d.getFullYear(), d.getMonth(), 1);
+            var yearStart = new Date(d.getFullYear(), 1, 1);
+
+            var currentSeptaAnnually = ((d - yearStart) / 86400000) * @item.Stat;
+            $({ numberValue: 0 }).animate({ numberValue: currentSeptaAnnually }, {
+                duration: 4000,
+                easing: 'linear',
+                step: function () {
+                    $('#@item.Name.Replace(" ","_")').text(Math.ceil(this.numberValue));
+                }
+            });
+
+
+            setInterval(function () {
+                var currentNumber = $('#@item.Name.Replace(" ", "_")').text();
+
+                var d = new Date();
+                var yearStart = new Date(d.getFullYear(), 1, 1);
+                var time = d.getTime();
+                var newNumber = ((d - yearStart) / 86400000) * @item.Name.Replace(" ", "_");
+                $({ numberValue: currentNumber }).animate({ numberValue: newNumber }, {
+                    duration: 500,
+                    easing: 'linear',
+                    step: function () {
+                        $('#@item.Name.Replace(" ", "_")').text(Math.ceil(this.numberValue));
+                    }
+                });
+            }, 8500);
+
+        });
+    });
+        </script>
+    }
+
+}

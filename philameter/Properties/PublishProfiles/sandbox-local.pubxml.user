@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\inetpub\wwwroot\philameter</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="Assets/css/bootstrap-timepicker.css">
+      <publishTime>02/26/2015 21:02:36</publishTime>
+    </File>
+    <File Include="Assets/css/bootstrap-wysihtml5.css">
+      <publishTime>02/26/2015 21:02:36</publishTime>
+    </File>
+    <File Include="Assets/css/bootstrap.css">
+      <publishTime>03/24/2015 21:36:44</publishTime>
+    </File>
+    <File Include="Assets/css/bootstrap.min.css">
+      <publishTime>03/24/2015 21:36:44</publishTime>
+    </File>
+    <File Include="Assets/css/datepicker.css">
+      <publishTime>02/26/2015 21:02:36</publishTime>
+    </File>
+    <File Include="Assets/css/endless-landing.css">
+      <publishTime>02/26/2015 21:02:36</publishTime>
+    </File>
+    <File Include="Assets/css/endless-landing.min.css">
+      <publishTime>02/26/2015 21:02:36</publishTime>
+    </File>
+    <File Include="Assets/css/endless-skin.css">
+      <publishTime>02/26/2015 21:02:36</publishTime>
+    </File>
+    <File Include="Assets/css/endless.css">
+      <publishTime>02/26/2015 21:02:36</publishTime>
+    </File>
+    <File Include="Assets/css/endless.min.css">
+      <publishTime>02/26/2015 21:02:36</publishTime>
+    </File>
+    <File Include="Assets/css/font-awesome.css">
+      <publishTime>02/28/2015 23:50:27</publishTime>
+    </File>
+    <File Include="Assets/css/font-awesome.min.css">
+      <publishTime>02/28/2015 23:50:39</publishTime>
+    </File>
+    <File Include="Assets/css/fullcalendar.css">
+      <publishTime>02/26/2015 21:02:36</publishTime>
+    </File>
+    <File Include="Assets/css/fullcalendar.print.css">
+      <publishTime>02/26/2015 21:02:36</publishTime>
+    </File>
+    <File Include="Assets/css/jcarousel.responsive.css">
+      <publishTime>02/26/2015 21:02:36</publishTime>
+    </File>
+    <File Include="Assets/css/Site.css">
+      <publishTime>03/24/2015 21:36:38</publishTime>
+    </File>
+    <File Include="Assets/js/bootstrap.js">
+      <publishTime>03/24/2015 21:36:44</publishTime>
+    </File>
+    <File Include="Assets/js/bootstrap.min.js">
+      <publishTime>03/24/2015 21:36:44</publishTime>
+    </File>
+    <File Include="Assets/js/endless/endless.js">
+      <publishTime>03/31/2015 20:36:04</publishTime>
+    </File>
+    <File Include="Assets/js/endless/endless_dashboard.js">
+      <publishTime>03/31/2015 20:36:34</publishTime>
+    </File>
+    <File Include="Assets/js/endless/endless_form.js">
+      <publishTime>03/31/2015 20:36:34</publishTime>
+    </File>
+    <File Include="Assets/js/endless/endless_wizard.js">
+      <publishTime>03/31/2015 20:36:34</publishTime>
+    </File>
+    <File Include="Assets/js/endless/pace.js">
+      <publishTime>03/31/2015 20:41:32</publishTime>
+    </File>
+    <File Include="Assets/js/endless/philadmin.js">
+      <publishTime>03/31/2015 20:36:34</publishTime>
+    </File>
+    <File Include="Assets/js/jquery-1.10.2.js">
+      <publishTime>03/24/2015 21:36:46</publishTime>
+    </File>
+    <File Include="Assets/js/jquery-1.10.2.min.js">
+      <publishTime>03/24/2015 21:36:46</publishTime>
+    </File>
+    <File Include="Assets/js/jquery-1.10.2.min.map">
+      <publishTime>03/24/2015 21:36:46</publishTime>
+    </File>
+    <File Include="Assets/js/jquery.colorbox.min.js">
+      <publishTime>03/31/2015 20:44:19</publishTime>
+    </File>
+    <File Include="Assets/js/jquery.cookie.min.js">
+      <publishTime>03/31/2015 20:48:54</publishTime>
+    </File>
+    <File Include="Assets/js/jquery.popupoverlay.min.js">
+      <publishTime>03/31/2015 20:50:40</publishTime>
+    </File>
+    <File Include="Assets/js/jquery.slimscroll.min.js">
+      <publishTime>03/31/2015 20:53:41</publishTime>
+    </File>
+    <File Include="Assets/js/jquery.sparkline.min.js">
+      <publishTime>03/31/2015 21:06:17</publishTime>
+    </File>
+    <File Include="Assets/js/modernizr-2.6.2.js">
+      <publishTime>03/24/2015 21:36:48</publishTime>
+    </File>
+    <File Include="Assets/js/statgroups/birth.js">
+      <publishTime>03/01/2015 18:06:19</publishTime>
+    </File>
+    <File Include="Assets/js/statgroups/pretzel.js">
+      <publishTime>03/01/2015 18:07:17</publishTime>
+    </File>
+    <File Include="Assets/js/statgroups/ridership.js">
+      <publishTime>03/01/2015 18:05:15</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>03/24/2015 21:32:16</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>03/24/2015 21:32:16</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>03/24/2015 21:28:19</publishTime>
+    </File>
+    <File Include="bin/MvcSiteMapProvider.dll">
+      <publishTime>03/24/2015 21:42:40</publishTime>
+    </File>
+    <File Include="bin/MvcSiteMapProvider.WebActivator.dll">
+      <publishTime>03/24/2015 21:42:40</publishTime>
+    </File>
+    <File Include="bin/philameter.dll">
+      <publishTime>05/02/2015 15:58:28</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>03/24/2015 21:28:19</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>03/24/2015 21:28:20</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>03/24/2015 21:28:18</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.Deployment.dll">
+      <publishTime>03/24/2015 21:28:19</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.dll">
+      <publishTime>03/24/2015 21:28:19</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.Razor.dll">
+      <publishTime>03/24/2015 21:28:19</publishTime>
+    </File>
+    <File Include="bin/WebActivatorEx.dll">
+      <publishTime>03/24/2015 21:42:40</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>03/24/2015 21:36:44</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>03/24/2015 21:36:44</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>03/24/2015 21:36:44</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>03/24/2015 21:36:44</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>03/24/2015 21:28:17</publishTime>
+    </File>
+    <File Include="Mvc.sitemap">
+      <publishTime>04/29/2015 22:10:37</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>03/24/2015 21:42:52</publishTime>
+    </File>
+    <File Include="Views/Home/About.cshtml">
+      <publishTime>04/02/2015 20:50:41</publishTime>
+    </File>
+    <File Include="Views/Home/Dashboard.cshtml">
+      <publishTime>05/02/2015 15:49:29</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>05/02/2015 15:49:56</publishTime>
+    </File>
+    <File Include="Views/Shared/DisplayTemplates/CanonicalHelperModel.cshtml">
+      <publishTime>03/24/2015 21:42:43</publishTime>
+    </File>
+    <File Include="Views/Shared/DisplayTemplates/MenuHelperModel.cshtml">
+      <publishTime>03/24/2015 21:42:43</publishTime>
+    </File>
+    <File Include="Views/Shared/DisplayTemplates/MenuNavBarHelper.cshtml">
+      <publishTime>04/19/2015 21:39:52</publishTime>
+    </File>
+    <File Include="Views/Shared/DisplayTemplates/MetaRobotsHelperModel.cshtml">
+      <publishTime>03/24/2015 21:42:42</publishTime>
+    </File>
+    <File Include="Views/Shared/DisplayTemplates/SiteMapHelperModel.cshtml">
+      <publishTime>03/24/2015 21:42:42</publishTime>
+    </File>
+    <File Include="Views/Shared/DisplayTemplates/SiteMapNodeModel.cshtml">
+      <publishTime>04/29/2015 22:07:22</publishTime>
+    </File>
+    <File Include="Views/Shared/DisplayTemplates/SiteMapNodeModelList.cshtml">
+      <publishTime>03/24/2015 21:42:42</publishTime>
+    </File>
+    <File Include="Views/Shared/DisplayTemplates/SiteMapPathHelperModel.cshtml">
+      <publishTime>03/24/2015 21:42:42</publishTime>
+    </File>
+    <File Include="Views/Shared/DisplayTemplates/SiteMapTitleHelperModel.cshtml">
+      <publishTime>03/24/2015 21:42:42</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>04/09/2015 21:24:02</publishTime>
+    </File>
+    <File Include="Views/web.config">
+      <publishTime>03/24/2015 21:42:50</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>03/24/2015 21:36:36</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>05/02/2015 15:58:29</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

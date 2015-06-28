@@ -15,6 +15,21 @@
 
     <div class="padding-md">
         <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <div class="panel-stat3 panel-info">
+                    <h1 class="m-top-none odometer" id="notsure">100</h1>
+
+                    <h4 id="odotest">odo this year</h4>
+
+                    <i class="fa fa-star fa-lg"></i> Odometer Test
+                    <div class="stat-icon">
+                        <i class="fa fa-ambulance fa-5x"></i>
+                    </div>
+                </div>
+            </div><!-- /.col -->
+        </div>
+
+        <div class="row">
             @foreach (var item in Model)
             {
                 <div class="col-sm-6 col-md-4">
@@ -31,46 +46,34 @@
                 </div><!-- /.col -->
             }
         </div>
+            
     </div><!-- /.padding-md -->
 </div><!-- /main-container -->
 @section Scripts
 {
-    @foreach (var item in Model)
+<script>  
+
+    function animateMetrics()
     {
-    <script>
-    $(function () {
-        var @item.Name.Replace(" ","_") = @item.Stat;
+        var time1 = 1325376000000;
+        var births = document.getElementById('Births');
 
-        $(window).load(function (e) {
+        var combined_emissions_to_time1 = 555401776700
+        // In tonnes of carbon
+        var rate_of_2012_emissions = 0.328755651
+        // In tonnes/millisecond
+        var foo = new Date;
+        // Use the time in milliseconds since 1st Jan 1970, otherwise known as unix time. Converter to normal time here: http://www.csgnetwork.com/epochtime.html
+        var current_unixtime_ms = foo.getTime();
 
-            //Animate
-            var d = new Date();
-            var dayStart = new Date(d.getFullYear(), d.getMonth(), d.getDate());
-            var monthStart = new Date(d.getFullYear(), d.getMonth(), 1);
-            var yearStart = new Date(d.getFullYear(), 1, 1);
-            var yearEnd = new Date(d.getFullYear()+ 1, 12,31);
-            var dailyMS = (24 * 60 * 60 * 1000)
+        births.innerHTML = parseInt(((current_unixtime_ms - time1) * rate_of_2012_emissions) + combined_emissions_to_time1);
 
-            var interval = 1000 * 60 * 60
-            var currentVal = ((d - yearStart) / dailyMS) * @item.Stat;
-            var intervalVal  =  ((@item.Stat) / dailyMS) * interval
+        timerID = setTimeout("animateMetrics()", 10);
 
-
-
-            $('#@item.Name.Replace(" ","_")').text(currentVal)
-
-            $({ numberValue: currentVal }).animate({ numberValue: (currentVal + intervalVal) }, {
-                duration: interval,
-                easing: 'linear',
-                step: function () {
-                    $('#@item.Name.Replace(" ","_")').text(Math.ceil(this.numberValue));
-                }
-            });
-
-
-        });
-    });
-</script>
     }
+
+    animateMetrics();
+
+</script>
 
 }
