@@ -16,12 +16,24 @@
     <div class="padding-md">
         <div class="row">
             <div class="col-sm-6 col-md-4">
-                <div class="panel-stat3 panel-info">
-                    <h1 class="m-top-none odometer" id="notsure">100</h1>
+                <div class="panel-stat3 bg-info">
+                    <h1 class="m-top-none odometer" id="odo">0</h1>
 
                     <h4 id="odotest">odo this year</h4>
 
-                    <i class="fa fa-star fa-lg"></i> Odometer Test
+                    <i class="fa fa-star fa-lg"></i>Odometer Test
+                    <div class="stat-icon">
+                        <i class="fa fa-ambulance fa-5x"></i>
+                    </div>
+                </div>
+            </div><!-- /.col -->
+            <div class="col-sm-6 col-md-4">
+                <div class="panel-stat3 bg-info">
+                    <h1 class="m-top-none odometer" id="milliseconds">0</h1>
+
+                    <h4 id="odotest">odo this year</h4>
+
+                    <i class="fa fa-star fa-lg"></i>Seconds Test
                     <div class="stat-icon">
                         <i class="fa fa-ambulance fa-5x"></i>
                     </div>
@@ -51,22 +63,22 @@
 </div><!-- /main-container -->
 @section Scripts
 {
-<script>  
+<script>
 
     function animateMetrics()
     {
-        var time1 = 1325376000000;
-        var births = document.getElementById('Births');
+        var d = new Date();
+        var dayStart = new Date(d.getFullYear(), d.getMonth(), d.getDate());
+        var monthStart = new Date(d.getFullYear(), d.getMonth(), 1);
+        var yearStart = new Date(d.getFullYear(), 1, 1);
+        var yearEnd = new Date(d.getFullYear()+ 1, 12,31);
+        var dailyMS = (24 * 60 * 60 * 1000);
 
-        var combined_emissions_to_time1 = 555401776700
-        // In tonnes of carbon
-        var rate_of_2012_emissions = 0.328755651
-        // In tonnes/millisecond
-        var foo = new Date;
-        // Use the time in milliseconds since 1st Jan 1970, otherwise known as unix time. Converter to normal time here: http://www.csgnetwork.com/epochtime.html
-        var current_unixtime_ms = foo.getTime();
 
-        births.innerHTML = parseInt(((current_unixtime_ms - time1) * rate_of_2012_emissions) + combined_emissions_to_time1);
+        @foreach (var item in Model)
+        {
+            @:$('#@item.Name.Replace(" ", "_")').text(parseInt(((d.getTime() - yearStart.getTime()) / dailyMS)  * @item.Stat));
+        }
 
         timerID = setTimeout("animateMetrics()", 10);
 
