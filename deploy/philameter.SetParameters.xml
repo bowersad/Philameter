@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <setParameter name="IIS Web Application Name" value="Philameter" />
+  <setParameter name="PhilaModel-Web.config Connection String" value="Data Source=WIN-BT43VBCDQM6;Initial Catalog=philameter.DAL.Entities.PhilaModel;Integrated Security=True;Application Name=EntityFramework" />
+  <setParameter name="PhilaModel_DatabasePublish-Web.config Connection String" value="Data Source=WIN-BT43VBCDQM6;Initial Catalog=philameter.DAL.Entities.PhilaModel;Integrated Security=True;Application Name=EntityFramework" />
+</parameters>

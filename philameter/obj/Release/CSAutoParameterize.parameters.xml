@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="PhilaModel-Web.config Connection String" description="PhilaModel Connection String used in web.config by the application to access the database." defaultValue="data source=WIN-L5GN27SO84P;initial catalog=philameter.DAL.Entities.PhilaModel;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Andy\\Documents\\GitHub\\Philameter\\philameter\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='PhilaModel']/@connectionString" />
+  </parameter>
+  <parameter name="PhilaModel_DatabasePublish-Web.config Connection String" description="PhilaModel_DatabasePublish Connection String used in web.config by the application to access the database." defaultValue="PhilaModel_DatabasePublish.ConnetionString" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Andy\\Documents\\GitHub\\Philameter\\philameter\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='PhilaModel_DatabasePublish']/@connectionString" />
+  </parameter>
+</parameters>

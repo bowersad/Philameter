@@ -214,6 +214,8 @@
     <Content Include="Views\Shared\DisplayTemplates\MenuNavBarHelper.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Dashboard.cshtml" />
+    <None Include="Properties\PublishProfiles\Prod-WebDeploy.pubxml" />
+    <None Include="Properties\PublishProfiles\Prod-WebPackage.pubxml" />
     <None Include="Properties\PublishProfiles\sandbox-local.pubxml" />
     <None Include="Properties\PublishProfiles\staging.pubxml" />
     <None Include="Web.Debug.config">
