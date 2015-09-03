@@ -113,7 +113,6 @@
     <Content Include="Assets\css\fullcalendar.css" />
     <Content Include="Assets\css\fullcalendar.print.css" />
     <Content Include="Assets\css\jcarousel.responsive.css" />
-    <Content Include="Assets\css\odometer-theme-default.css" />
     <Content Include="Assets\css\Site.css" />
     <Content Include="Assets\js\endless\endless.js" />
     <Content Include="Assets\js\endless\endless_dashboard.js" />
@@ -126,8 +125,6 @@
     <Content Include="Assets\js\jquery.popupoverlay.min.js" />
     <Content Include="Assets\js\jquery.slimscroll.min.js" />
     <Content Include="Assets\js\jquery.sparkline.min.js" />
-    <Content Include="Assets\js\odometer.js" />
-    <Content Include="Assets\js\odometer.min.js" />
     <Content Include="Assets\js\statgroups\birth.js" />
     <Content Include="Assets\js\statgroups\pretzel.js" />
     <Content Include="Assets\js\statgroups\ridership.js" />
