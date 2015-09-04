@@ -5,12 +5,12 @@
 
   <mvcSiteMapNode title="Home" controller="Home" action="Dashboard" Icon="fa-desktop">
   <mvcSiteMapNode title="About" controller="Home" action="About" Icon="fa-heartbeat"/> 
-    <mvcSiteMapNode title="Categories" clickable="false"  Icon="fa-tags">     
+    <!--mvcSiteMapNode title="Categories" clickable="false"  Icon="fa-tags">     
         <mvcSiteMapNode title="People" controller="Home" action="Details" Icon="fa-child"/> 
         <mvcSiteMapNode title="Food" controller="Home" action="Details" Icon="fa-cutlery"/>     
         <mvcSiteMapNode title="Transportation" controller="Home" action="Details" Icon="fa-exchange"/>      
     </mvcSiteMapNode>
-    <mvcSiteMapNode title="Categories" action="Details" dynamicNodeProvider="philameter.Code.CategoryDynamicNodeProvider, philameter" />
+    <mvcSiteMapNode title="Categories" action="Details" dynamicNodeProvider="philameter.Code.CategoryDynamicNodeProvider, philameter" /-->
   </mvcSiteMapNode>
 
 </mvcSiteMap>
