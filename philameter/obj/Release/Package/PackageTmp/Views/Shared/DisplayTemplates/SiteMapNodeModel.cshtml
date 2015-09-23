@@ -11,7 +11,7 @@
                 <i class="fa @Model.Attributes["Icon"].ToString() fa-lg"></i>
             </span>
             <span class="text">
-                @Model.Description (@Model.Action) (Current+Clickable)
+                @Model.Description 
             </span>
             <span class="menu-hover"></span>
             @if (Model.Children.Any())
@@ -37,7 +37,7 @@ else if (Model.IsCurrentNode && !Model.IsClickable)
                 <i class="fa @Model.Attributes["Icon"].ToString() fa-lg"></i>
             </span>
             <span class="text">
-                @Model.Description (@Model.Action) (Current+NotClickable)
+                @Model.Description 
             </span>
             <span class="menu-hover"></span>
         </a>
@@ -51,7 +51,7 @@ else if (!Model.IsCurrentNode && !Model.IsClickable)
                 <i class="fa @Model.Attributes["Icon"].ToString() fa-lg"></i>
             </span>
             <span class="text">
-                @Model.Description (@Model.Action) (NotCurrent+NotClickable)
+                @Model.Description 
             </span>
             <span class="menu-hover"></span>
         </a>
@@ -65,7 +65,7 @@ else if (!Model.IsCurrentNode && Model.IsClickable)
                 <i class="fa @Model.Attributes["Icon"].ToString() fa-lg"></i>
             </span>
             <span class="text">
-                @Model.Description (@Model.Action) (NotCurrent+Clickable)
+                @Model.Description
             </span>
             <span class="menu-hover"></span>
         </a>

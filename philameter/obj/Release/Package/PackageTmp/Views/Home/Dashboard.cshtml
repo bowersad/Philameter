@@ -5,53 +5,8 @@
 }
 
 <div id="main-container">
-    <div id="breadcrumb">
-        <ul class="breadcrumb">
-            <li><i class="fa fa-home"></i><a href="index.html"> Home</a></li>
-            <li class="active">Dashboard</li>
-        </ul>
-    </div><!-- /breadcrumb-->
-
 
     <div class="padding-md">
-        <div class="row">
-            <div class="col-sm-6 col-md-4">
-                <div class="panel-stat3 bg-info">
-                    <h1 class="m-top-none" id="odo">0</h1>
-
-                    <h4 id="odotest">odo this year</h4>
-
-                    <i class="fa fa-star fa-lg"></i>Odometer Test
-                    <div class="stat-icon">
-                        <i class="fa fa-ambulance fa-5x"></i>
-                    </div>
-                </div>
-            </div><!-- /.col -->
-            <div class="col-sm-6 col-md-4">
-                <div class="panel-stat3 bg-info">
-                    <h1 class="m-top-none" id="odoNow">0</h1>
-
-                    <h4 id="odotest">odo this year</h4>
-
-                    <i class="fa fa-star fa-lg"></i>Odometer Test
-                    <div class="stat-icon">
-                        <i class="fa fa-ambulance fa-5x"></i>
-                    </div>
-                </div>
-            </div><!-- /.col -->
-            <div class="col-sm-6 col-md-4">
-                <div class="panel-stat3 bg-info">
-                    <h1 class="m-top-none odometer" id="milliseconds">0</h1>
-
-                    <h4 id="odotest">odo this year</h4>
-
-                    <i class="fa fa-star fa-lg"></i>Seconds Test
-                    <div class="stat-icon">
-                        <i class="fa fa-ambulance fa-5x"></i>
-                    </div>
-                </div>
-            </div><!-- /.col -->
-        </div>
 
         <div class="row">
             @foreach (var item in Model)
@@ -85,8 +40,8 @@
         var yearStart = new Date(d.getFullYear(), 1, 1);
         var yearEnd = new Date(d.getFullYear()+ 1, 12,31);
         var dailyMS = (24 * 60 * 60 * 1000);
-        $('#odo').text(parseInt(yearStart.getTime()));
-        $('#odoNow').text(parseInt(d.getTime()));
+        //$('#odo').text(parseInt(yearStart.getTime()));
+        //$('#odoNow').text(parseInt(d.getTime()));
         
         @foreach (var item in Model)
         {

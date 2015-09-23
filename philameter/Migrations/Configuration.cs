@@ -31,21 +31,23 @@ namespace philameter.Migrations
             var catPeople = new Category { Id = 1, Name = "People", FontAwesomeIcon = "fa-child" };
             var catfood = new Category { Id = 2, Name = "Food", FontAwesomeIcon = "fa-cutlery" };
             var catTransport = new Category { Id = 3, Name = "Transportation", FontAwesomeIcon="fa-exchange" };
+            var catSpending = new Category { Id = 4, Name = "Spending", FontAwesomeIcon = "fa-money" };
 
             context.Category.AddOrUpdate(catPeople);
             context.Category.AddOrUpdate(catfood);
             context.Category.AddOrUpdate(catTransport);
+            context.Category.AddOrUpdate(catSpending);
 
             var statBirth = new Stats { Id = 1, Name = "Births", Details = "Number of people born in Philadelphia, PA", Source = "IDK", Stat = 63.25, PanelClass = "bg-success", FontAwesomeIcon = "fa-birthday-cake" ,Category = catPeople};
             var statPretzel = new Stats { Id = 2, Name = "Pretzels Eaten", Details = "Number of pretzel's eaten in Philadelphia, PA", Source = "IDK", Stat = 63821, PanelClass = "bg-warning", FontAwesomeIcon = "fa-cutlery", Category = catfood };
             var statSeptaRidership = new Stats { Id = 3, Name = "SEPTA Ridership", Details = "Number of people riding SEPTA each day", Source = "IDK", Stat = 333600, PanelClass = "bg-info", FontAwesomeIcon = "fa-subway", Category = catTransport };
-
+            var statMilitarySpending = new Stats {Id  = 4, Name = "Military Spending", Details = "Total spent on the military each day", Source = "IDK", Stat = 6513212581, PanelClass = "bg-warning", FontAwesomeIcon = "fa-tank", Category = catSpending};
 
 
             context.Stats.AddOrUpdate(statBirth);
             context.Stats.AddOrUpdate(statPretzel);
             context.Stats.AddOrUpdate(statSeptaRidership);
-
+            context.Stats.AddOrUpdate(statMilitarySpending);
         }
     }
 }
