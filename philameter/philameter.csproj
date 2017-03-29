@@ -214,6 +214,7 @@
     <None Include="Properties\PublishProfiles\Prod-WebDeploy.pubxml" />
     <None Include="Properties\PublishProfiles\Prod-WebPackage.pubxml" />
     <None Include="Properties\PublishProfiles\sandbox-local.pubxml" />
+    <None Include="Properties\PublishProfiles\SmarterASPWebDeploy.pubxml" />
     <None Include="Properties\PublishProfiles\staging.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
