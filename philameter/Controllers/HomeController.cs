@@ -8,6 +8,7 @@ using philameter.DAL;
 using philameter.DAL.Entities;
 using philameter.DAL.Repositories;
 
+
 namespace philameter.Controllers
 {
     public class HomeController : Controller
@@ -21,6 +22,14 @@ namespace philameter.Controllers
         
 
         public ActionResult Dashboard()
+        {
+            var StatsModel = service.Stats.Get();
+
+            return View(StatsModel);
+        }
+
+        [Route("/Home/NewDash")]
+        public  ActionResult NewDash()
         {
             var StatsModel = service.Stats.Get();
 

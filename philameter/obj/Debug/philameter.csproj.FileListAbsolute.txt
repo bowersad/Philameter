@@ -96,3 +96,7 @@ C:\Users\abowers\source\Repos\Philameter\philameter\obj\Debug\philameter.Migrati
 C:\Users\abowers\source\Repos\Philameter\philameter\obj\Debug\philameter.csproj.GenerateResource.Cache
 C:\Users\abowers\source\Repos\Philameter\philameter\obj\Debug\philameter.dll
 C:\Users\abowers\source\Repos\Philameter\philameter\obj\Debug\philameter.pdb
+C:\Users\abowers\source\Repos\Philameter\philameter\bin\RestSharp.dll
+C:\Users\abowers\source\Repos\Philameter\philameter\bin\RestSharp.xml
+C:\Users\abowers\source\Repos\Philameter\philameter\obj\Debug\philameter.csproj.CoreCompileInputs.cache
+C:\Users\abowers\source\Repos\Philameter\philameter\bin\Microsoft.Web.Administration.dll
