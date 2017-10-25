@@ -12,14 +12,14 @@
             @foreach (var item in Model)
             {
                 <div class="col-sm-6 col-md-4">
-                    <div class="panel-stat3 @item.PanelClass">
+                    <div class="@string.Format("panel-stat3 {0}", item.PanelClass)">
                         <h1 class="m-top-none" id="@item.Name.Replace(" ","_")">0</h1>
                         
-                        <h4 id="birthDailyLabel">@item.Name this year</h4>
+                        <h4 id="birthDailyLabel">@string.Format("{0} this year",item.Name)</h4>
                         
-                        <i class="fa @item.Category.FontAwesomeIcon fa-lg"></i> @item.Category.Name
+                        <i class="@string.Format("fa {0} fa-lg", item.FontAwesomeIcon)"></i>@string.Format("Category: {0}", "Sample") 
                         <div class="stat-icon">
-                            <i class="fa @item.FontAwesomeIcon fa-5x"></i>
+                            <i class="@string.Format("fa {0} fa-5x", item.FontAwesomeIcon)"></i>
                         </div>
                     </div>
                 </div><!-- /.col -->
